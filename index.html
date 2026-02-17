@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>ESPETTO LOUNGE - Sistema</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍢 ESPETTO LOUNGE</h1>
+    <p>Sistema de Pedidos</p>
+  </header>
+
+  <div class="container">
+
+    <label>Mesa:</label>
+    <input type="number" id="mesa">
+
+    <label>Produto:</label>
+    <select id="produto">
+      <option value="15">Alcatra - R$15,00</option>
+      <option value="17">Contra filé - R$17,00</option>
+      <option value="16">Picanha - R$16,00</option>
+      <option value="6">Pão De Alho - R$6,00</option>
+      <option value="8">Queijo - R$8,00</option>
+      <option value="10">Cerveja Heineken - R$10,00</option>
+      <option value="9">Cerveja Budwaiser - R$9,00</option>
+      <option value="5">Cerveja Skol - R$5,00</option>
+      <option value="3,50">Água - R$3,50</option>
+      <option value="5">Água Com Gás - R$5,00</option>
+      <option value="5">Coca Cola Lata - R$5,00</option>
+      <option value="5">Coca Cola Lata Zero Açucar - R$5,00</option>
+      <option value="10">Ice - R$10,00</option>
+      <option value="10">Coca cola 1 litro - R$10,00</option>
+      <option value="10">Coca cola de 1 litro zero açucar - R$10,00</option>
+      <option value="10">Guaraná 1 litro - R$10,00</option>
+      <option value="5">Sprite - R$5,00</option>
+      <option value="5">Fanta Laranja - R$5,00</option>
+      <option value="31">Baldinho de Skol pirigute 6 unidades - R$31,00</option>
+      <option value="37">Baldinho de Budwaiser 4 unidades - R$37,00</option>
+      <option value="41">Baldinho de Heineken 4 unidades - R$41,00</option>
+    </select>
+
+    <button onclick="adicionarPedido()">Adicionar</button>
+
+    <h2>Pedidos</h2>
+    <ul id="listaPedidos"></ul>
+
+    <h3>Total: R$ <span id="total">0</span></h3>
+
+    <button class="finalizar" onclick="fecharConta()">Fechar Conta</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
